@@ -5,10 +5,12 @@ using UnityEngine;
 public class TankModel
 {
     private TankController tankController;
-
-    public TankModel()
+    public float movementspeed;
+    public float rotationspeed;
+    public TankModel(float _movement, float _rotation)
     {
-
+        movementspeed = _movement;
+        rotationspeed = _rotation;
     }
 
     public void SetTankController(TankController _tankController)
